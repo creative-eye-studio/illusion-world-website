@@ -6,5 +6,7 @@
 {% block desc %}{{ meta_desc }}{% endblock %}
 
 {% block body %}
+    {% include "webpages/blocks/#{page_lang}/header.html.twig" %}
     {% include "webpages/pages/#{page_lang}/#{page_id}.html.twig" %}
+    {% include "webpages/blocks/#{page_lang}/footer.html.twig" %}
 {% endblock %}
